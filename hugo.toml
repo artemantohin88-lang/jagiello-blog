@@ -3,6 +3,7 @@ languageCode = "ru"
 title = "Артём Ягелло"
 theme = "jagiello"
 contentDir = "content"
+description = "Разборы, инструменты и наблюдения о росте среднего и малого бизнеса"
 
 [taxonomies]
   category = "categories"
