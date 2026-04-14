@@ -1,0 +1,9 @@
+baseURL = "https://jagiello.ru/"
+languageCode = "ru"
+title = "Артём Ягелло"
+theme = "jagiello"
+contentDir = "content"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"

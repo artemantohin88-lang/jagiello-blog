@@ -1,0 +1,18 @@
+<nav>
+  <div class="nav-i">
+    <a href="https://jagiello.ru" class="nav-back">На главную</a>
+    <div class="nav-logo">Артём Ягелло</div>
+    <a href="https://t.me/artemcalypso" class="nav-cta" target="_blank" rel="noopener">Написать</a>
+  </div>
+</nav>
+<style>
+nav { position: sticky; top: 0; z-index: 100; background: rgba(248,246,242,.92); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); }
+.nav-i { max-width: 1180px; margin: 0 auto; padding: 0 32px; height: 60px; display: flex; align-items: center; justify-content: space-between; }
+.nav-back { font-size: 13px; color: var(--t2); display: flex; align-items: center; gap: 6px; transition: color .15s; }
+.nav-back::before { content: '←'; }
+.nav-back:hover { color: var(--text); }
+.nav-logo { font-size: 14px; font-weight: 600; }
+.nav-cta { background: var(--text); color: var(--bg); font-size: 13px; font-weight: 500; padding: 8px 18px; border-radius: 7px; transition: opacity .15s; }
+.nav-cta:hover { opacity: .8; }
+@media (max-width: 640px) { .nav-i { padding: 0 20px; } }
+</style>
