@@ -1,10 +1,10 @@
 ---
-title: "Тестовая статья"
+title: "Газовая Стратегия"
 date: 2026-04-14
 draft: false
 category: "Кейс"
 tags: ["маркетинг", "тест"]
-description: "ГАЗОВАЯ СТРАТЕГИЯ"
+description: "Тактика водолаза"
 readtime: "5 мин"
 ---
 
