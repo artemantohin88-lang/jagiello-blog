@@ -5,4 +5,4 @@ theme = "jagiello"
 description = "Разборы, инструменты и наблюдения о росте среднего и малого бизнеса"
 [taxonomies]
   category = "categories"
-  tag = "tags"
+  tag = "tags" 
