@@ -1,26 +1,45 @@
-name: Deploy Hugo Blog
+name: Deploy blog to jagiello.ru/blog/
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout blog repo
+        uses: actions/checkout@v4
+        with:
+          submodules: true
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.160.1'
-          extended: true
+          hugo-version: 'latest'
 
       - name: Build
         run: hugo --minify
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Checkout main site repo
+        uses: actions/checkout@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          repository: artemantohin88-lang/jagiello
+          token: ${{ secrets.JAGIELLO_TOKEN }}
+          path: jagiello-main
+
+      - name: Copy blog to /blog/ folder
+        run: |
+          rm -rf jagiello-main/blog
+          mkdir -p jagiello-main/blog
+          cp -r public/* jagiello-main/blog/
+
+      - name: Commit and push to jagiello
+        run: |
+          cd jagiello-main
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add blog/
+          git commit -m "update blog" || echo "nothing to commit"
+          git push
