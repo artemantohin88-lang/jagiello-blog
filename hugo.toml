@@ -1,4 +1,4 @@
-baseURL = "https://artemantohin88-lang.github.io/jagiello-blog/"
+baseURL = "https://jagiello.ru/blog/"
 languageCode = "ru"
 title = "Артём Ягелло"
 theme = "jagiello"
