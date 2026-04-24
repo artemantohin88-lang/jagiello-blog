@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Артём Ягелло</title>
-    <link>http://localhost:1313/blog/</link>
-    <description>Recent content on Артём Ягелло</description>
+    <title>CRM on Артём Ягелло</title>
+    <link>http://localhost:1313/blog/tags/crm/</link>
+    <description>Recent content in CRM on Артём Ягелло</description>
     <generator>Hugo</generator>
     <language>ru</language>
     <lastBuildDate>Fri, 24 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/crm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Эффективные инструменты маркетинга: как выбрать правильные для вашего бизнеса</title>
       <link>http://localhost:1313/blog/posts/effektivnye-instrumenty-marketinga/</link>
