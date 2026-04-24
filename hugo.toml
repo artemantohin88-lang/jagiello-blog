@@ -6,3 +6,7 @@ description = "Разборы, инструменты и наблюдения о
 [taxonomies]
   category = "categories"
   tag = "tags" 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
