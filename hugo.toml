@@ -3,10 +3,32 @@ languageCode = "ru"
 title = "Артём Ягелло"
 theme = "jagiello"
 description = "Разборы, инструменты и наблюдения о росте среднего и малого бизнеса"
+
 [taxonomies]
   category = "categories"
-  tag = "tags" 
+  tag = "tags"
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[params]
+  description = "Стратегия роста для B2B-компаний от 200 млн ₽ выручки"
+
+[related]
+  includeNewer = true
+  threshold = 10
+  toLower = false
+
+  [[related.indices]]
+    name = "tags"
+    weight = 80
+
+  [[related.indices]]
+    name = "categories"
+    weight = 60
+
+  [[related.indices]]
+    name = "date"
+    weight = 10
