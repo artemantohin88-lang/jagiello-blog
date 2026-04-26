@@ -21,7 +21,7 @@
       </nav>
 
       <div class="art-meta">
-        <span class="card-tag">{{ index .Params.categories 0 }}</span>
+        <span class="card-tag">{{ .Params.rubric }}</span>
         <span class="art-date">{{ .Date.Format "2 January 2006" }}</span>
         <span class="art-meta-sep">·</span>
         <span class="art-read" id="read-time">{{ .Params.readtime }}</span>
@@ -91,7 +91,7 @@
       <div class="related-grid">
         {{ range . }}
         <a href="{{ .Permalink }}" class="related-card">
-          {{ if .Params.categories }}<span class="related-tag">{{ index .Params.categories 0 }}</span>{{ end }}
+          {{ if .Params.rubric }}<span class="related-tag">{{ .Params.rubric }}</span>{{ end }}
           <div class="related-title">{{ .Title }}</div>
           <div class="related-meta">
             <span>{{ .Date.Format "2 Jan 2006" }}</span>
