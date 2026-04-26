@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CRM on Артём Ягелло</title>
-    <link>http://localhost:1313/blog/tags/crm/</link>
+    <link>https://jagiello.ru/blog/tags/crm/</link>
     <description>Recent content in CRM on Артём Ягелло</description>
     <generator>Hugo</generator>
     <language>ru</language>
     <lastBuildDate>Fri, 24 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/crm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jagiello.ru/blog/tags/crm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Эффективные инструменты маркетинга: как выбрать правильные для вашего бизнеса</title>
-      <link>http://localhost:1313/blog/posts/effektivnye-instrumenty-marketinga/</link>
+      <link>https://jagiello.ru/blog/posts/effektivnye-instrumenty-marketinga/</link>
       <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/posts/effektivnye-instrumenty-marketinga/</guid>
+      <guid>https://jagiello.ru/blog/posts/effektivnye-instrumenty-marketinga/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;instrumenty-marketinga.webp&#34; alt=&#34;Инструменты маркетинга для бизнеса — схема выбора&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;распространенные-ошибки-при-выборе-инструментов-и-их-последствия&#34;&gt;Распространенные ошибки при выборе инструментов и их последствия&lt;/h2&gt;&#xA;&lt;p&gt;Когда речь заходит о том, какие инструменты маркетинга действительно нужны бизнесу, многие компании действуют по одному сценарию: маркетинговый отдел или подрядчик подключает одновременно несколько систем автоматизации со схожим функционалом. Совокупный ежемесячный чек за подписки достигает десятков тысяч рублей, при этом внятного обоснования для каждой платформы нет. Причина — отсутствие предварительного аудита процессов перед закупкой софта. Инструмент приобретается «на вырост» или потому что он активно обсуждается в профессиональной среде, без привязки к конкретной операционной задаче.&lt;/p&gt;</description>
     </item>
   </channel>
