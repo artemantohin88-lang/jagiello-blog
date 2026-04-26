@@ -43,12 +43,12 @@
       <div class="cards" id="cards">
         {{ range .Pages }}
         <a class="card{{ if .Params.featured }} featured{{ end }}" href="{{ .Permalink }}"
-           data-category="{{ .Params.category }}"
+           data-category="{{ index .Params.categories 0 }}"
            data-tags="{{ if .Params.tags }}{{ delimit .Params.tags "," }}{{ end }}"
            data-date="{{ .Date.Format "2006-01-02" }}">
           <div class="card-head">
             {{ if .Params.featured }}<span class="badge-feat">Популярное</span>{{ end }}
-            <span class="card-tag">{{ .Params.category }}</span>
+            <span class="card-tag">{{ index .Params.categories 0 }}</span>
             <span class="card-date">{{ .Date.Format "2 Jan 2006" }}</span>
           </div>
           <div class="card-title">{{ .Title }}</div>
