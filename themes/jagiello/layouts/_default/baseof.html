@@ -11,7 +11,7 @@
 {{ if .Params.cover }}{{ $image = printf "%scover.jpeg" .Permalink }}
 {{ else }}{{ $image = printf "%sog-default.jpg" .Site.BaseURL }}{{ end }}
 
-<title>{{ if .IsHome }}Блог · Артём Ягелло{{ else }}{{ $title }} · Артём Ягелло{{ end }}</title>
+<title>{{ if .IsHome }}Блог · Артём Ягелло{{ else if eq .Title "Posts" }}Все статьи · Артём Ягелло{{ else }}{{ $title }} · Артём Ягелло{{ end }}</title>
 <meta name="description" content="{{ $desc }}">
 <link rel="canonical" href="{{ $url }}">
 
