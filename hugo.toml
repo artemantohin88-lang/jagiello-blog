@@ -2,6 +2,7 @@ baseURL = "https://jagiello.ru/blog/"
 languageCode = "ru"
 title = "Артём Ягелло"
 theme = "jagiello"
+buildFuture = true
 description = "Разборы, инструменты и наблюдения о росте среднего и малого бизнеса"
 
 [taxonomies]
