@@ -95,7 +95,8 @@ a { color:inherit; text-decoration:none; }
 
 nav.site-nav { position:sticky; top:0; z-index:100; background:rgba(248,246,242,.92); backdrop-filter:blur(14px); border-bottom:1px solid var(--border); }
 .site-nav-inner { max-width:1180px; margin:0 auto; padding:0 32px; height:60px; display:flex; align-items:center; justify-content:space-between; }
-.site-nav-logo { font-family:'Instrument Serif',serif; font-size:20px; color:var(--text); letter-spacing:-.01em; }
+.site-nav-logo { display:flex; align-items:baseline; gap:5px; font-size:15px; font-weight:600; letter-spacing:-.01em; color:var(--text); }
+.site-nav-logo span { font-family:'Instrument Serif',serif; font-style:italic; font-weight:400; font-size:16px; }
 .site-nav-cta { background:var(--text); color:var(--bg); font-size:13px; font-weight:500; padding:8px 18px; border-radius:7px; transition:opacity .15s; }
 .site-nav-cta:hover { opacity:.8; }
 
@@ -130,7 +131,7 @@ footer.site-footer { border-top:1px solid var(--border); padding:28px 0; margin-
 
 <nav class="site-nav">
   <div class="site-nav-inner">
-    <a href="/" class="site-nav-logo">Артём Ягелло</a>
+    <a href="/" class="site-nav-logo">Артём <span>Ягелло</span></a>
     <a href="https://t.me/artemcalypso" class="site-nav-cta" target="_blank" rel="noopener">Обсудить</a>
   </div>
 </nav>
