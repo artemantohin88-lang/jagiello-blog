@@ -49,7 +49,7 @@
           <div class="card-head">
             {{ if .Params.featured }}<span class="badge-feat">Популярное</span>{{ end }}
             <span class="card-tag">{{ .Params.rubric }}</span>
-            <span class="card-date">{{ .Date.Format "2 Jan 2006" }}</span>
+            <span class="card-date">{{ partial "ru-date.html" .Date }}</span>
           </div>
           <div class="card-title">{{ .Title }}</div>
           <div class="card-excerpt">{{ .Description }}</div>

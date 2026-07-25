@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Шаблон обложки — jagiello.ru/blog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background:#111;
+  display:flex; flex-direction:column;
+  align-items:center; justify-content:center;
+  min-height:100vh; gap:24px; padding:40px;
+  font-family:sans-serif;
+}
+.hint {
+  color:#555; font-size:12px;
+  max-width:1200px; line-height:1.8;
+}
+.hint code { background:#000; padding:2px 6px; border-radius:3px; color:#9fcab2; font-size:11px; }
+
+.cover {
+  width:1200px; height:630px;
+  background:#18160f;
+  display:flex; flex-direction:column;
+  justify-content:space-between;
+  padding:64px 80px;
+  position:relative; overflow:hidden;
+}
+
+/* Декоративная буква на фоне — первая буква заголовка */
+.cover-bg-letter {
+  position:absolute;
+  font-family:'Instrument Serif',Georgia,serif;
+  font-size:480px; font-weight:400;
+  color:rgba(255,255,255,.03);
+  right:-20px; bottom:-100px;
+  line-height:1; letter-spacing:-.05em;
+  user-select:none; pointer-events:none;
+}
+
+.cover-top {
+  display:flex; align-items:center;
+  justify-content:space-between;
+  position:relative; z-index:1;
+}
+.cover-tag {
+  font-family:'Instrument Sans',sans-serif;
+  font-size:10px; font-weight:600;
+  letter-spacing:.2em; text-transform:uppercase;
+  color:rgba(255,255,255,.35);
+}
+.cover-domain {
+  font-family:'Instrument Sans',sans-serif;
+  font-size:12px; color:rgba(255,255,255,.2);
+  letter-spacing:.04em;
+}
+
+.cover-title {
+  font-family:'Instrument Serif',Georgia,serif;
+  font-size:68px; font-weight:400;
+  line-height:1.05; letter-spacing:-.025em;
+  color:#f8f6f2; max-width:860px;
+  position:relative; z-index:1;
+}
+
+.cover-bottom {
+  display:flex; align-items:center;
+  justify-content:space-between;
+  position:relative; z-index:1;
+  padding-top:24px;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+.cover-author {
+  font-family:'Instrument Sans',sans-serif;
+  font-size:13px; color:rgba(255,255,255,.4);
+}
+.cover-author strong {
+  color:rgba(255,255,255,.7); font-weight:500;
+}
+.cover-meta {
+  font-family:'Instrument Sans',sans-serif;
+  font-size:12px; color:rgba(255,255,255,.2);
+  letter-spacing:.04em;
+}
+</style>
+</head>
+<body>
+
+<p class="hint">
+  Менять три вещи:<br>
+  1. <code>cover-tag</code> — категория: Инструмент / Разбор / Наблюдение / Тезис<br>
+  2. <code>cover-title</code> — заголовок статьи<br>
+  3. <code>cover-bg-letter</code> — первая буква заголовка (сейчас «Э»)<br>
+  4. <code>cover-meta</code> — время чтения и дата<br>
+  <br>
+  Скриншот: <code>⌘+Shift+4</code> → выдели обложку → PNG в Загрузки<br>
+  Конвертация: <code>cwebp -q 82 ~/Downloads/скрин.png -o ~/Downloads/ключ-статьи.webp</code><br>
+  Переложить: <code>mv ~/Downloads/ключ-статьи.webp "/Users/novus/Файлы (Mac)/Агентство/jagiello-blog/content/posts/папка-статьи/"</code>
+</p>
+
+<div class="cover">
+  <div class="cover-bg-letter">Э</div><!-- ← первая буква заголовка -->
+
+  <div class="cover-top">
+    <div class="cover-tag">Инструмент</div><!-- ← категория -->
+    <div class="cover-domain">jagiello.ru/blog</div>
+  </div>
+
+  <h1 class="cover-title">Эффективные инструменты маркетинга: как выбрать правильные</h1><!-- ← заголовок -->
+
+  <div class="cover-bottom">
+    <div class="cover-author"><strong>Артём Ягелло</strong> · Внешний директор по росту</div>
+    <div class="cover-meta">9 мин · апрель 2026</div><!-- ← время и дата -->
+  </div>
+</div>
+
+</body>
+</html>

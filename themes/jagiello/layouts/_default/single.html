@@ -22,7 +22,7 @@
 
       <div class="art-meta">
         <span class="card-tag">{{ .Params.rubric }}</span>
-        <span class="art-date">{{ .Date.Format "2 January 2006" }}</span>
+        <span class="art-date">{{ partial "ru-date.html" .Date }}</span>
         <span class="art-meta-sep">·</span>
         <span class="art-read" id="read-time">{{ .Params.readtime }}</span>
       </div>
@@ -94,7 +94,7 @@
           {{ if .Params.rubric }}<span class="related-tag">{{ .Params.rubric }}</span>{{ end }}
           <div class="related-title">{{ .Title }}</div>
           <div class="related-meta">
-            <span>{{ .Date.Format "2 Jan 2006" }}</span>
+            <span>{{ partial "ru-date.html" .Date }}</span>
             {{ if .Params.readtime }}<span>·</span><span>{{ .Params.readtime }}</span>{{ end }}
           </div>
         </a>
